@@ -23,7 +23,11 @@ export default function TransactionList() {
   const [error, setError] = useState<string | null>(null);
   const [recipient, setRecipient] = useState("");
   const [amount, setAmount] = useState("");
-  const [previewResult] = useState<null>(null);
+  type PreviewResult = {
+    logs?: string[];
+    err?: unknown;
+  } | null;
+  const [previewResult] = useState<PreviewResult>(null);
   const [faucetMessage, setFaucetMessage] = useState<string | null>(null);
 
   const connection = new Connection("https://api.devnet.solana.com", "confirmed");
