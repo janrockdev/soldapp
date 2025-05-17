@@ -9,7 +9,7 @@ import {
   SystemProgram,
   LAMPORTS_PER_SOL,
 } from "@solana/web3.js";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -18,12 +18,12 @@ import { ExternalLink } from "lucide-react";
 
 export default function TransactionList() {
   const { publicKey, signTransaction } = useWallet();
-  const [transactions, setTransactions] = useState<any[]>([]);
+  const [transactions, setTransactions] = useState<import("@solana/web3.js").ConfirmedSignatureInfo[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [recipient, setRecipient] = useState("");
   const [amount, setAmount] = useState("");
-  const [previewResult, setPreviewResult] = useState<any>(null);
+  const [previewResult] = useState<null>(null);
   const [faucetMessage, setFaucetMessage] = useState<string | null>(null);
 
   const connection = new Connection("https://api.devnet.solana.com", "confirmed");

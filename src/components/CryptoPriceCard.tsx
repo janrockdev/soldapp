@@ -86,7 +86,7 @@ export default function CryptoPriceCard({ symbol, name }: { symbol: string; name
       console.log(`Historical data for ${symbol}:`, data);
       if (data && Array.isArray(data) && data.length > 0 && data[0]?.price) {
         setHistoricalData(
-          data.slice(0, 30).map((item: any) => ({
+          data.slice(0, 30).map((item: { date: string; price: number }) => ({
             date: item.date,
             close: item.price, // Map price to close
           }))
