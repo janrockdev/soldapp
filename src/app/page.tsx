@@ -13,10 +13,10 @@ export default function Home() {
         <section className="bg-muted py-12 sm:py-24">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Welcome to Your Next.js App
+              SolDapp
             </h1>
             <p className="mt-4 text-lg text-muted-foreground sm:text-xl max-w-2xl mx-auto">
-              Build modern, accessible web applications with Next.js and Shadcn/UI.
+              Build modern, accessible decentralised applications for Solana with Next.js and Shadcn/UI.
             </p>
             <Button size="lg" className="mt-6">
               Explore Now
