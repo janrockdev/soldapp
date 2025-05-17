@@ -195,7 +195,7 @@ export default function TransactionList() {
               <TableRow key={index}>
                 <TableCell className="truncate max-w-xs">{tx.signature}</TableCell>
                 <TableCell>
-                  {new Date(tx.blockTime * 1000).toLocaleString()}
+                  {tx.blockTime ? new Date(tx.blockTime * 1000).toLocaleString() : "N/A"}
                 </TableCell>
                 <TableCell>{tx.confirmationStatus}</TableCell>
                 <TableCell>
