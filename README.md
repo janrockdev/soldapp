@@ -1,5 +1,7 @@
 # Solana Dapp Template (NextJS)
 
+Preview: [Demo](https://soldapp-theta.vercel.app/)
+
 ## Features
 [x] Connect wallet button
 [x] Solana faucet button
