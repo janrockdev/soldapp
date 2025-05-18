@@ -14,7 +14,7 @@ Preview: [Demo](https://soldapp-theta.vercel.app/)
 npx create-next-app@latest soldapp --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
 cd soldapp
 npx shadcn@latest init
-npx shadcn@latest add button card sheet table input label
+npx shadcn@latest add button card sheet table input label textarea
 npm install lucide-react
 npm install @solana/wallet-adapter-base@latest @solana/wallet-adapter-react@latest @solana/wallet-adapter-react-ui@latest @solana/wallet-adapter-wallets@latest @solana/web3.js@latest --legacy-peer-deps
 npm install @solana/wallet-adapter-react-ui --legacy-peer-deps
